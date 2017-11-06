@@ -23,6 +23,7 @@ Those files must be copied on SD_Card (mounted as /boot)
 To find Raspberry on your LAN, even if it's connected from a shared WIFI connexion from your MAC
 
 **On your MAC/Linux PC**
+
 	sh find_rpi.sh
 
 ## Secure ssh connection
@@ -30,16 +31,19 @@ To find Raspberry on your LAN, even if it's connected from a shared WIFI connexi
 ### Check if you have a ssh-key 
 
 **On your MAC/Linux PC**
+
 	ls ~/.ssh/
 
 You must see something like **id_rsa** and **id_rsa.pub**
 
 **if not, just follow the command below**
+
 	ssh-keygen
 
 ### Copy your key to your Raspberry
 
 **On your MAC/Linux PC**
+
 	ssh-copy-id pi@[raspberry_ip_adress]
 
 and type your password.
@@ -47,6 +51,7 @@ and type your password.
 ### Connect
 
 **On your MAC/Linux PC**
+
 	ssh pi@[raspberry_ip_adress]
 
 ** No password will be prompted **
@@ -54,11 +59,13 @@ and type your password.
 ### Change your "root" password
 
 **On your Raspberry**
+
 	passwd
 
 ### Disallow ssh connexion with password
 
 **On your Raspberry**
+
 	nano /etc/ssh/sshd_config
 
 and replace **#PermitRootLogin prohibit-password** by **PermitRootLogin without-password**
@@ -66,6 +73,7 @@ and replace **#PermitRootLogin prohibit-password** by **PermitRootLogin without-
 ## prerequisites for Sense hat
 
 **On your Raspberry**
+
 	sudo sh ~/rpi-utlis/sense_hat/first_setup.sh
 
 
