@@ -5,12 +5,12 @@
 
 	ssh pi@[raspberry_ip_adress]
 	cd
-	git clone https://github.com/djimondev/rpi-utlis.git
+	git clone https://github.com/djimondev/rpi-utils.git
 
 **Install on your MAC/Linux PC**
 
 	cd
-	git clone https://github.com/djimondev/rpi-utlis.git
+	git clone https://github.com/djimondev/rpi-utils.git
 
 ## Init SD-Card
 
